@@ -102,7 +102,63 @@ MarkDown & Git
         - 스
             - 트
 
+5.강조
+---
+* 5.1 기울인 텍스트
+    ```
+    *기울어짐*
+    ```
+    *기울어짐*
 
+* 5.2 굵은 글씨 텍스트
+    ```
+    **굵어짐**
+    ```
+    **굵어짐**
+    __ㅇ__
+
+* 5.3 취소 텍스트
+    ```
+    ~~취소~~
+    ```
+    ~~취소~~
+
+6.링크
+---
+* 6.1 주소
+    ```
+    [구글](https://google.ca)
+
+    [네이버](https://naver.com "링크에 대한 주석 작성은 큰따음표로")
+
+    [Git 메인페이지로](../../)
+
+    [참조 링크][reference Link]
+
+    [reference Link]: http://naver.com "네이버입니다."
+    ```
+    [구글](https://google.ca)
+
+    [네이버](https://naver.com "링크에 대한 주석 작성은 큰따음표로")
+
+    [Git 메인페이지로](../../)
+
+    [참조 링크][reference Link]
+
+    [reference Link]: http://naver.com "네이버입니다."
+
+7.이미지
+---
+* 7.1 이미지
+    ```
+    ![대체 텍스트 입력](이미지주소 "이미지 주석은 여기로")
+    <img src="이미지 경로" width="길이" height="높이" title="설명" alt="alt값"></img>
+    ```
+    ![대체 텍스트 입력](https://vignette.wikia.nocookie.net/aokana/images/5/50/Wiki-background/revision/latest?cb=20180128203228 "이미지 주석은 여기로")
+
+    <img src="https://vignette.wikia.nocookie.net/aokana/images/5/50/Wiki-background/revision/latest?cb=20180128203228" width="500" height="272" title="이미지 <img> 사용" alt="aokana"></img>
+
+***
 
 # Git
 
