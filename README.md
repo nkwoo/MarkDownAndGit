@@ -12,6 +12,8 @@ MarkDown & Git
 
 # MarkDown
 
+마크다운은 웹상에서 글작성을 하는 모든 사람들을 위한 글쓰기 도구 입니다.
+
 1.제목
 ---
 * 1.1 메인 제목(Main Title)
@@ -162,9 +164,68 @@ MarkDown & Git
 
 # Git
 
-미정
+Git은 제일 큰 사용 이유는 버전 관리 이며 다른 개발자와의 빠른 협업환경을 조성 하기 위함입니다.
+SVN(파일단위 관리 시스템) 과는 달리 누가, 언제, 무엇을, 왜, 어떻게 수정했는지 코드 리뷰가 가능합니다.
+대부분의 IDE에서 지원하며 누구든 사용가능 합니다.
+
+1.Git의 역할
+---
+* 소스코드 병합 (Merge, Rebase)
+* 소스코드 리비전 관리 (Reset, Commi, Branch)
+* 소스코드 릴리즈 (Push)
+* 소스코드 태깅 (Tag)
+* 소스코드 변경사항 검토 (Diff, Log)
+
+2.Git
+---
+초기 생성
+```
+git init
+```
+
+원격 주소 설정
+```
+git remote add https://github.com/nkwoo/MarkDownAndGit.git
+```
+
+원격지에서 깃 받아오기 
+```
+git clone https://github.com/nkwoo/MarkDownAndGit.git
+```
+
+로컬에서 작업 후 로컬 깃에 추가하기
+```
+git add *
+git add index.html
+```
+
+로컬 깃에 파일 추가후 커밋 작성하기<br>
+깃 메시지 수정할때는 --amend 옵션추가
+```
+git commit -m "커밋 메시지 작성"
+git connit -m "커밋 메시지 재수정" --amend
+```
+
+로컬 깃에서 원격지 깃에 업로드 하기
+```
+git push -u origin master
+```
+
+로컬 깃 현재 상태 조회
+```
+git status
+```
+
+원격지 깃에서 깃 파일 가져오기<br>
+pull 과 fetch의 차이점은 merge를 하느냐 안하느냐 차이<br>
+pull : fetch + merge
+```
+git pull origin master
+git fetch origin master
+```
 
 ***
 
 출처
 [**마크다운 사용법**](https://gist.github.com/ihoneymon/652be052a0727ad59601#21-%ED%97%A4%EB%8D%94headers)
+[**Git 사용방법**](https://github.com/KennethanCeyer/tutorial-git)
